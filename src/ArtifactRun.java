@@ -16,5 +16,7 @@ public class ArtifactRun {
         Artifact ar4 = new Artifact(4);
         System.out.println();
         ar4.print();
+
+        System.out.println("ar1.getCulture() = " + ar1.getCulture());
     }
 }
