@@ -1,17 +1,19 @@
+import p3.Person;
+
 /**
  * @author Dzmitry Fursevich
  */
 public class Run {
     public static void main(String[] args) {
         Person alex = new Person();
-        alex.name = "Alex"; //8 byte
-        alex.age = 20; //4 byte
-        alex.phone = "+37522222222"; //20 byte
+        alex.setName("Alex"); //8 byte
+        alex.setAge(20); //4 byte
+        alex.setPhone("+37522222222"); //20 byte
 
-        Person tom = new Person();
-        tom.name = "Tom";
-        tom.age=30;
-        tom.phone = "+375293333333";
+        p3.Person tom = new p3.Person();
+        tom.setName("Tom");
+        tom.setAge(30);
+        tom.setPhone("+375293333333");
 
         alex.sayHello();
         tom.sayHello();
@@ -25,7 +27,7 @@ public class Run {
         Person sam = new Person("Sam", 50);
         sam.sayHello();
 
-//        Person mark = null;
-//        mark.sayHello();
+        Person mark = new Person();
+        mark.setAge(-10);
     }
 }
